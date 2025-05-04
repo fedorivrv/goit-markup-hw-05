@@ -633,6 +633,9 @@ img {
   border-color: #4d5ae5;
   fill: #4d5ae5;
 }
+.modal-form-input:focus + svg {
+  fill: #4d5ae5;
+}
 .modal-form-icon {
   position: absolute;
   left: 16px;
@@ -686,7 +689,7 @@ img {
   justify-content: center;
   fill: transparent;
 }
-.modal-form-checkbox:checked + .modal-form-privacy-checkbox {
+.modal-form-checkbox:checked + .modal-form-label .modal-form-privacy-checkbox {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
@@ -695,11 +698,12 @@ img {
   color: #4d5ae5;
 }
 .modal-form-button {
+  margin: 0 auto;
   display: block;
   min-width: 169px;
   height: 56px;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;  
+  font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
@@ -708,4 +712,9 @@ img {
   background-color: #4d5ae5;
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-checkbox {
+  width: 32px;
+  height: 32px;
+  background-position: -624px 0;
 }
